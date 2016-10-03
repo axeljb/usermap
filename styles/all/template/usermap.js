@@ -103,7 +103,7 @@ usermap.hide_menu=function(full) {
 	if(full) {
 		$('#map_menu').find('a').each(function() {
 			var href = $(this).attr('href');
-			$(this).attr('href', href.replace(/&?lon=(.*)&lat=(.*)/gi, 'LONLAT'));
+			$(this).attr('href', href.replace(/lon=(.*)&lat=(.*)/gi, 'LONLAT'));
 		});
 	}
 };
